@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            text-align: center;
+            font-weight: bolder ;
+        }
+        .header {
+            background-color: rgb(187, 177, 177);
+            grid-column: 1/5;
+            height: 100px;
+        }
+        .main {
+            background-color: rgb(216, 216, 97);
+            height: 500px;
+            grid-column: 1/4;
+        
+        }
+        .sidebar {
+            background-color: rgb(128, 199, 128);
+        }
+        .footer {
+            background-color: rgb(175, 164, 164); 
+            height: 100px;
+            grid-column: 1/5;
+        }
+.cont2 {
+    display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+            height: calc(100% - 1.15em - 20px);
+            align-content: end;
+
+}
+.d3 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+.cont3 {
+    display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding: 10px;
+background-color: gray;
+height: calc(100% - 1.15em - 20px);
+align-content: center;
+}
+    </style>
+</head>
+<body>
+    <h1>Grid</h1>
+    <div class="container">
+<header class="header">Шапка страницы</header>
+<main class="main">Основная часть
+    <div class="cont2">
+        <div class="d1" style="background-color: brown;"> Еще1
+        </div>
+        <div class="d2" style="background-color: rgb(190, 127, 127);"> Еще2</div>
+        <div class="d3" style="background-color: rgb(241, 107, 107);"> Еще3</div>
+    </div>
+</main>
+<aside class="sidebar">Боковая часть</aside>
+<footer class="footer">
+    <div class="cont3">
+    <div>Секция футера 1</div>
+    <div>Секция футера 2</div>
+    <div>Секция футера 3</div>
+    <div>Секция футера 4</div>
+</div>
+</footer>
+    </div>
+</body>
+</html>
